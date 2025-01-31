@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BankApp - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Bienvenue, <span id="username"></span>!</h2>
+        <h3>Solde : <span id="balance">--</span> €</h3>
+
+        <h2>Déposer de l'argent</h2>
+        <input type="number" id="deposit-amount" placeholder="Montant">
+        <button onclick="deposit()">Déposer</button>
+
+        <h2>Retirer de l'argent</h2>
+        <input type="number" id="withdraw-amount" placeholder="Montant">
+        <button onclick="withdraw()">Retirer</button>
+
+        <h2>Transférer de l'argent</h2>
+        <input type="text" id="transfer-to" placeholder="Nom du destinataire">
+        <input type="number" id="transfer-amount" placeholder="Montant">
+        <button onclick="transfer()">Transférer</button>
+
+        <h2>Transactions récentes</h2>
+        <ul id="transactions-list"></ul>
+
+        <button onclick="logout()">Déconnexion</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
